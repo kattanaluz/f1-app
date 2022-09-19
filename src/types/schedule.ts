@@ -6,7 +6,7 @@ export interface DateTime {
 export interface Location {
   country: string;
   lat: string;
-  location: string;
+  locality: string;
   long: string;
 }
 
@@ -19,10 +19,10 @@ export interface Circuit {
 
 export interface Races {
   Circuit: Circuit;
-  FisrtPractice: DateTime;
+  FirstPractice: DateTime;
   Qualifying: DateTime;
-  SecondPratice: DateTime;
-  ThirdPratice: DateTime;
+  SecondPractice: DateTime;
+  ThirdPractice: DateTime;
   date: string;
   raceName: string;
   round: string;
@@ -31,7 +31,17 @@ export interface Races {
   url: string;
 }
 
-export interface RaceTable {
+export interface Races {
   Races: Races[];
   season: string;
+}
+
+export interface RaceTable {
+  RaceTable: Races;
+  limit: string;
+  offset: string;
+  series: string;
+  total: string;
+  url: string;
+  xmlns: string;
 }

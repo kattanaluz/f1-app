@@ -1,0 +1,15 @@
+.nextRaceCard {
+  display: flex;
+  color: white;
+  gap: 100px;
+  justify-content: flex-start;
+}
+
+.imageFlagContainer {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imageFlag {
+  width: 190px;
+}
